@@ -34,8 +34,11 @@ print('='*70)
 sm = 1
 psw = 8
 cbr = 0
-
 while psw <= 11:
+    a19 = 1
+    a20 = 100
+    a21 = 200
+    a22 = 300
     for c in range(0, len(nome)):
         a00 = f'{bd["soft"]} {psw + 1} {psw + 1} {crt} -t'
         a1 = f'{bd["soft"]} {psw} {psw} {crt} -t'
@@ -67,42 +70,46 @@ while psw <= 11:
         # FIM do módulo de upper e lower
         if (psw - len(nome[c])) <= 7:
             if psw > len(nome[c]):
-                print(f'{a1} {nome[c]}{"@" * (psw-len(nome[c]))}{a11} -o {sm}b{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c]}{a11} -o {sm}c{a13}')
-                print(f'{a1} {nome[c].capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}d{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c].capitalize()}{a11} -o {sm}e{a13}')
-                print(f'{a1} {nome[c].upper()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}f{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c].upper()}{a11} -o {sm}g{a13}')
-                print(f'{a1} {nome[c][::-1]}{"@" * (psw - len(nome[c]))}{a11} -o {sm}h{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1]}{a11} -o {sm}i{a13}')
-                print(f'{a1} {nome[c][::-1].capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}j{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1].capitalize()}{a11} -o {sm}k{a13}')
-                print(f'{a1} {nome[c][::-1].upper()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}l{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1].upper()}{a11} -o {sm}m{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{a17}{a11} -o {sm}n{a13}')
-                print(f'{a1} {"@" * (psw - len(nome[c]))}{a18}{a11} -o {sm}0{a13}')
+                print(f'{a1} {nome[c]}{"@" * (psw-len(nome[c]))}{a11} -o {a19}b{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c]}{a11} -o {a19}c{a13}')
+                print(f'{a1} {nome[c].capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {a19}d{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c].capitalize()}{a11} -o {a19}e{a13}')
+                print(f'{a1} {nome[c].upper()}{"@" * (psw - len(nome[c]))}{a11} -o {a19}f{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c].upper()}{a11} -o {a19}g{a13}')
+                print(f'{a1} {nome[c][::-1]}{"@" * (psw - len(nome[c]))}{a11} -o {a19}h{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1]}{a11} -o {a19}i{a13}')
+                print(f'{a1} {nome[c][::-1].capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {a19}j{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1].capitalize()}{a11} -o {a19}k{a13}')
+                print(f'{a1} {nome[c][::-1].upper()}{"@" * (psw - len(nome[c]))}{a11} -o {a19}l{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{nome[c][::-1].upper()}{a11} -o {a19}m{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{a17}{a11} -o {a19}n{a13}')
+                print(f'{a1} {"@" * (psw - len(nome[c]))}{a18}{a11} -o {a19}0{a13}')
+                a19 += 1
             if psw_spc[0] == 's':
                 a2 = psw - len(nome[c])
                 if 'a' in nome[c] and len(nome[c]) >= 8 and cbr == 0:
-                    print(f'{bd["soft"]} {psw - a2} {psw - a2} @ -t {nome[c].replace("a", "@")} -o {sm}ps{a13}')
+                    print(f'{bd["soft"]} {psw - a2} {psw - a2} @ -t {nome[c].replace("a", "@")} -o {a20}ps{a13}')
+                    a20 += 1
                     cbr += 1
                 if 'l' in nome[c]:
-                    print(f'{a00} {nome[c].replace("l", "ll")}{"@" * (psw - len(nome[c]))}{a11} -o {sm}al{a13}')
-                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll")}{a11} -o {sm}bl{a13}')
-                    print(f'{a00} {nome[c].replace("l", "ll").capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}cl{a13}')
-                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll").capitalize()}{a11} -o {sm}dl{a13}')
-                    print(f'{a00} {nome[c].replace("l", "ll").upper()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}el{a13}')
-                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll").upper()}{a11} -o {sm}fl{a13}')
+                    print(f'{a00} {nome[c].replace("l", "ll")}{"@" * (psw - len(nome[c]))}{a11} -o {a21}al{a13}')
+                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll")}{a11} -o {a21}bl{a13}')
+                    print(f'{a00} {nome[c].replace("l", "ll").capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {a21}cl{a13}')
+                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll").capitalize()}{a11} -o {a21}dl{a13}')
+                    print(f'{a00} {nome[c].replace("l", "ll").upper()}{"@" * (psw - len(nome[c]))}{a11} -o {a21}el{a13}')
+                    print(f'{a00} {"@" * (psw - len(nome[c]))}{nome[c].replace("l", "ll").upper()}{a11} -o {a21}fl{a13}')
+                    a21 += 1
                 if 'i' in nome[c] and len(nome[c]) >= 5:
                     a = nome[c].index('i')
                     b = f'{nome[c][:a]}y{nome[c][a + 1:]}'
-                    print(f'{a1} {b}{"@" * (psw - len(nome[c]))}{a11} -o {sm}ai{a13}')
-                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b}{a11} -o {sm}bi{a13}')
-                    print(f'{a1} {b.capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}ci{a13}')
-                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b.capitalize()}{a11} -o {sm}di{a13}')
-                    print(f'{a1} {b.upper()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}ei{a13}')
-                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b.upper()}{a11} -o {sm}fi{a13}')
-            opr = [88, 81, 99] #intervalo (80 até 99)
+                    print(f'{a1} {b}{"@" * (psw - len(nome[c]))}{a11} -o {a22}ai{a13}')
+                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b}{a11} -o {a22}bi{a13}')
+                    print(f'{a1} {b.capitalize()}{"@" * (psw - len(nome[c]))}{a11} -o {a22}ci{a13}')
+                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b.capitalize()}{a11} -o {a22}di{a13}')
+                    print(f'{a1} {b.upper()}{"@" * (psw - len(nome[c]))}{a11} -o {a22}ei{a13}')
+                    print(f'{a1} {"@" * (psw - len(nome[c]))}{b.upper()}{a11} -o {a22}fi{a13}')
+                    a22 += 1
+            opr = [88, 81, 99]
             for e in range(0, len(opr)):
                 if psw_cel[0] == 's':
                     print(f'{a14} {nome[c]}9{opr[e]}{a15}{sm}{opr[e]}cel1{a13}')
