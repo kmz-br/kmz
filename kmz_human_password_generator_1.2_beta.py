@@ -102,7 +102,7 @@ while psw <= 11:
                     print(f'{a1} {"@" * (psw - len(nome[c]))}{b.capitalize()}{a11} -o {sm}di{a13}')
                     print(f'{a1} {b.upper()}{"@" * (psw - len(nome[c]))}{a11} -o {sm}ei{a13}')
                     print(f'{a1} {"@" * (psw - len(nome[c]))}{b.upper()}{a11} -o {sm}fi{a13}')
-            opr = [88, 81, 99]
+            opr = [88, 81, 99] #intervalo (80 até 99)
             for e in range(0, len(opr)):
                 if psw_cel[0] == 's':
                     print(f'{a14} {nome[c]}9{opr[e]}{a15}{sm}{opr[e]}cel1{a13}')
