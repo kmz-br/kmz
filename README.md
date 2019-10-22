@@ -12,7 +12,7 @@ Crie dicionários personalizados a partir das informações sobre o alvo;
 - Sistema operacional; kali linux, windows 7, 8, 10
 - Outros OS faz-se necessário a instalação do [chrunch](https://sourceforge.net/projects/crunch-wordlist/files/)
 
-#### Modulos de senhas:
+#### Módulos de senhas:
 1. ֎ - permutação dos caracteres | 0 - 9 | a -z | A-Z | personalizados |
 2. o tamanho da senha é difinida pelo usuário.
 3. a ֎ é variável e depende do tamanho mínimo e máximo da senha.
