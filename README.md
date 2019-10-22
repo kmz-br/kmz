@@ -13,7 +13,7 @@ Melhorias da versão 2.0.1
 #### Modulos de senhas:
 1. ֎ - permutação dos caracteres | 0 - 9 | a -z | A-Z | personalizados |
 2. o tamanho da senha é difinida pelo usuário.
-3. a ֎ é variável e depende do tamanho minímo e máximo da senha.
+3. a ֎ é variável e depende do tamanho mínimo e máximo da senha.
 4. a palavra **password** é substituida pelas informações do alvo.
 	- ֎password
 	- password֎
