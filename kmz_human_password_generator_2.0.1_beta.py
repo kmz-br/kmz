@@ -1,9 +1,7 @@
-﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 __author__ = "Rodrigo da Costa"
 __copyright__ = "Copyright (C) 2019, kmz human password generator"
-__version__ = "2.0.0 beta"
-__email__ = "suporte@4rcm.com"
+__version__ = "2.0.1 beta"
 """
 crunch - wordlist generator
 https://sourceforge.net/projects/crunch-wordlist/files/
