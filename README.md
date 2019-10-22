@@ -1,8 +1,36 @@
-<h3>KMZ Human Password Generator 2.0.0 beta<h3/>
+## **KMZ HPG 2.0.1**
+## **kmz human password generator 2.0.1 beta**
+Crie dicionários personalizados a partir das informações sobre o alvo.
+*nome e sobrenomes, filhos, animais de estimação, time, esporte, religião,  etc.*
 
-Requisitos da versão 1.2 beta: <br />
-<ul>
-<li>Python 3.7+ 
-<li>Sistema operacional: Windows 7+ / Ubuntu 18 LST , Kali linux
-<ul />
- 
+Melhorias da versão 2.0.1
+- correções de bugs e melhorias no desempenho
+
+**Requisitos**
+- Python 3.7+
+- Sistema operacional; kali linux, windows 7, 8, 10
+
+#### Modulos de senhas:
+1. ֎ - permutação dos caracteres | 0 - 9 | a -z | A-Z | personalizados |
+2. o tamanho da senha é difinida pelo usuário.
+3. a ֎ é variável e depende do tamanho minímo e máximo da senha.
+4. a palavra **password** é substituida pelas informações do alvo.
+	- ֎password
+	- password֎
+	- ֎Password
+	- Password֎
+	- ֎PASSWORD
+	- PASSWORD֎
+	- ֎PaSsWoRd
+	- PaSsWoRd֎
+	- ֎pAsSwOrD
+	- pAsSwOrD֎
+
+
+**outros casos**
+palavras que contenha os caracteres l e y
+- brasileiro   --  brasi**ll**eiro
+- brasileiro   --   bras**y**leiro
+
+em breve
+- brasileiro   --  br@sileiro
